@@ -9,3 +9,41 @@
   border-radius: 5px;
   margin-bottom: 1rem;
 }
+
+
+.wrap {
+  margin: 10% auto;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 5px;
+}
+
+.label {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+input {
+  border: 1px solid black;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+
+}
+.button {
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+  border-radius: 5px;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 800;
+}
