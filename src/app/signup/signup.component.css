@@ -1,7 +1,7 @@
-body {
-  width: 100%;
-  padding: 1rem;
-  color: #fff;
+.container-form{
+  margin: 2% 0 2% 0;
+  box-shadow: 0px 10px 20px #888888;
+  border-radius: 10px;
 }
 
 .form-heading {
@@ -27,8 +27,13 @@ input {
   border-radius: 5px;
   padding: 1rem;
   margin-bottom: 1rem;
-
 }
+
+.input:hover {
+  background: #f8f4f4;
+}
+
+
 .button {
   width: 100%;
   display: inline-block;
@@ -52,6 +57,6 @@ span {
 
 @media screen and (min-width: 768px) {
   .container-form {
-    margin: 0 20% 0 20%;
+    margin: 2% 20% 2% 20%;
   }
 }
