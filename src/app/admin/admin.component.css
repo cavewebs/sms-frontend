@@ -1,0 +1,20 @@
+.container {
+  /* text-align: center; */
+  margin: 10% auto 0% auto;
+}
+
+.wrap {
+  margin: 10% auto;
+}
+
+.admin-text {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: block;
+  padding: 1rem;
+  width: 50vw;
+  margin-bottom: 1.5rem;
+}
+
