@@ -1,21 +1,9 @@
-
-
-
 body {
   width: 100%;
   padding: 1rem;
   color: #fff;
 }
- 
-.title {
-  font-size: 3em;
-  padding-top: 6rem;
-}
 
-.label {
-  text-transform: uppercase;
-  font-weight: 600;
-}
 .form-heading {
   width: 100%;
   display: inline-block;
