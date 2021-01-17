@@ -19,6 +19,7 @@ import { VerificationComponent } from './verification/verification.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { TransactionComponent } from './transaction/transaction.component';
 import { SettingComponent } from './setting/setting.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { SettingComponent } from './setting/setting.component';
     VerificationComponent,
     ForgotPasswordComponent,
     TransactionComponent,
-    SettingComponent
+    SettingComponent,
+    FooterComponent
   ],
   
   imports: [

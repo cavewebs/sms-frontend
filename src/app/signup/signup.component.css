@@ -1,56 +1,58 @@
-.container-form{
-  box-shadow: 0px 4px 20px 1px #888;
-  border-radius: 50px 0px;
+.container-form {
+	box-shadow: 0px 4px 20px 1px #888;
+	border-radius: 50px 0px;
+	max-width: 500px;
+	margin: 30px auto;
+	margin-top: 100px;
 }
 
 .form-heading {
-  text-align: center;
-  border-radius: 5px;
-  font-size: 0.7rem;
-  padding-top: 3rem;
+	text-align: center;
+	border-radius: 5px;
+	font-size: 0.7rem;
+	padding-top: 3rem;
 }
 
 .form-container {
-  padding: 2rem;
-  border-radius: 5px;
+	padding: 2rem;
+	border-radius: 5px;
 }
 
 input {
-  border: 1px solid black;
-  width: 100%;
-  border-radius: 5px;
-  padding: 1rem;
-  margin-bottom: 1rem;
+	border: 1px solid black;
+	width: 100%;
+	border-radius: 5px;
+	padding: 1rem;
+	margin-bottom: 1rem;
 }
 
 .input:hover {
-  background: #f8f4f4;
+	background: #f8f4f4;
 }
-
 
 .button {
-  width: 100%;
-  display: inline-block;
-  text-align: center;
-  border-radius: 5px;
-  padding: 1rem;
-  color: #fff;
-  font-weight: 800;
+	width: 100%;
+	display: inline-block;
+	text-align: center;
+	border-radius: 5px;
+	padding: 1rem;
+	color: #fff;
+	font-weight: 800;
 }
 
-.form-buttom-text{
-  color: #000;
-  font-size: 0.7em;
-  text-align: center;
-  padding-top: 2rem;
+.form-buttom-text {
+	color: #000;
+	font-size: 0.7em;
+	text-align: center;
+	padding-top: 2rem;
 }
 
 span {
-  color: #ff0000;
+	color: #ff0000;
 }
 
 @media screen and (min-width: 768px) {
-  .container-form {
-    margin: 2% 20% 2% 20%;
-  }
+	.container-form {
+		margin-top: 120px;
+	}
 }

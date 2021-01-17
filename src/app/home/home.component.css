@@ -1,7 +1,140 @@
 .container {
-  margin-left: 5%;
+	margin: 5px auto;
 }
 
 .wrap {
-  margin: 10% 0 2rem 0;
+	margin: 0;
+}
+.banner {
+	margin-top: -120px;
+}
+.banner2 {
+	margin-top: -200px;
+}
+.banner-img {
+	height: 20%;
+}
+
+.img-fluid {
+	/* height: 90%; */
+}
+.footer-logo {
+	width: 120px;
+	float: left;
+}
+.features {
+	padding: 20px;
+}
+.bg-color {
+	background-color: wheat;
+	margin-right: 10px;
+}
+
+.bg-color-2 {
+	background-color: rgb(202, 179, 245);
+	margin-left: 10px;
+}
+
+.bg-color-3 {
+	background-color: teal;
+}
+.features-box {
+}
+
+.serviceBox {
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	padding: 25px 0 0;
+	margin: 0 -5px;
+	position: relative;
+}
+.serviceBox:before {
+	content: '';
+	border: 2px solid #000;
+	border-radius: 20px;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	bottom: 10px;
+	z-index: 1;
+}
+.serviceBox .service-icon {
+	color: #222;
+	font-size: 50px;
+	margin: 0 auto 30px;
+}
+.serviceBox .service-content {
+	background: #00eca6;
+	padding: 25px 30px;
+	border-radius: 0 0 20px 20px;
+	position: relative;
+}
+.serviceBox .service-content:before {
+	content: '';
+	background-color: #00eca6;
+	height: 30px;
+	width: 30px;
+	transform: translateX(-50%) rotate(45deg);
+	position: absolute;
+	left: 50%;
+	top: -13px;
+}
+.serviceBox .title {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 500;
+	letter-spacing: 0.5px;
+	text-transform: uppercase;
+	margin: 0 0 10px;
+}
+.serviceBox .description {
+	color: #000;
+	font-size: 13px;
+	line-height: 23px;
+	margin: 0;
+}
+.serviceBox.darkgreen .service-content {
+	background-color: #48b8f7;
+}
+.serviceBox.darkgreen .service-content:before {
+	background-color: #48b8f7;
+}
+.serviceBox.blue .service-content {
+	background-color: #42d6e5;
+}
+.serviceBox.blue .service-content:before {
+	background-color: #42d6e5;
+}
+.serviceBox.darkblue .service-content {
+	background-color: #e933da;
+}
+.serviceBox.darkblue .service-content:before {
+	background-color: #e933da;
+}
+@media only screen and (max-width: 990px) {
+	.serviceBox {
+		margin: 0 0 30px;
+	}
+}
+
+@media (max-width: 960px) {
+	.wrap {
+		margin-top: 75px;
+		margin-bottom: 20px;
+	}
+	.banner-text {
+		font-size: 1.5rem;
+		margin: 20px 0;
+		line-height: 35px;
+	}
+}
+
+@media (min-width: 960px) {
+	.img-fluid {
+		height: 100%;
+	}
+	.header2 {
+		margin-top: -150px;
+	}
 }
