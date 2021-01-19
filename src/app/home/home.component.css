@@ -15,9 +15,9 @@
 	height: 20%;
 }
 
-.img-fluid {
-	/* height: 90%; */
-}
+/* .img-fluid {
+	height: 90%;
+} */
 .footer-logo {
 	width: 120px;
 	float: left;
@@ -38,8 +38,8 @@
 .bg-color-3 {
 	background-color: teal;
 }
-.features-box {
-}
+/* .features-box {
+} */
 
 .serviceBox {
 	font-family: 'Poppins', sans-serif;
