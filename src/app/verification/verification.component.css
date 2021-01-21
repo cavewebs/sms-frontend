@@ -1,17 +1,22 @@
-.wrap {
+.container {
+  padding: 2rem;
+}
+
+/* .wrap {
   text-align: center; 
   margin: 10% auto;
-}
+} */
 
 .title {
   font-weight: 600;
 }
 
 .form-container {
-  background: #fff;
   border-radius: 40px 0px;
   padding: 2rem;
   box-shadow: 0px 4px 20px 1px #888;
+  max-width: 500px;
+  margin: 100px auto;
 }
 
 
@@ -22,8 +27,12 @@ input {
   margin-bottom: 1rem;
   padding: 1rem;
   text-align: center;
-
 }
+
+.input:hover {
+	background: #f8f4f4;
+}
+
 .button {
   width: 100%;
   display: inline-block;
