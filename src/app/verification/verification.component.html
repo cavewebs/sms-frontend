@@ -1,8 +1,17 @@
-<section class="container wrap d-grid gap-2 col-6 mx-auto">
-  <form action="#" class="form-container">
-    <p class="title">Enter the 6 digit code sent to your Email</p>
+<section class="container">
+  <section class="container-form">
 
-    <input class="input" maxlength="6" type="email" placeholder="- - - - - -" required>    
-    <a class="button btn-success" routerLink="/login">Verify</a>    
-  </form>
+    <div class="form-heading">
+      <h6>Enter the 6 digit code sent to your Email</h6>
+    </div>
+   
+
+    <form action="#" class="form-container">
+      <div class="field">
+        <input class="input" type="text" placeholder="- - - - -" required>
+      </div>        
+      
+      <a class="button btn-success" routerLink="/profile">Verify</a>
+    </form>
+  </section>
 </section>
