@@ -9,40 +9,52 @@
    
 
     <form action="#" class="form-container">
+      <div class="text-danger text-center info-danger" [hidden]="!errorMsg">
+        {{errorMsg}}
+      </div>
       <div class="field">
         <label class="label">First Name</label>
-        <input class="input" type="text" placeholder="First Name" required>
+        <input class="input" type="text" placeholder="First Name" name="fname" [(ngModel)]="signup.firstname" required>
       </div>
 
       <div class="field">
         <label class="label">Last Name</label>
-        <input class="input" type="text" placeholder="Last Name" required>
+        <input class="input" type="text" placeholder="Last Name" name="lastname" [(ngModel)]="signup.lastname" required>
       </div>
 
       <div class="field">
         <label class="label">Email</label>
-        <input class="input" type="email" placeholder="Email" required>
+        <input class="input" type="email" placeholder="Email" name="email" [(ngModel)]="signup.email" required>
       </div>
 
       <div class="field">
         <label class="label">Phone Number</label>
-        <input class="input" type="number" placeholder="Phone Number" required>
+        <input class="input" type="number" placeholder="Phone Number" name="phoneNumber" [(ngModel)]="signup.phoneNumber" required>
       </div>
 
 
       <div class="field">
         <label class="label">Password</label>
-        <input class="input" type="password" placeholder="Password" required>
+        <input class="input" type="password" placeholder="Password" name="password" [(ngModel)]="signup.password" required>
       </div>
 
       <div class="field">
         <label class="label">Confirm Password</label>
-        <input class="input" type="password" placeholder="Confirm Password" required>
+        <input class="input" type="password" placeholder="Confirm Password" name="confirmPassword" [(ngModel)]="signup.confirmPassword" required>
       </div>
       
-      <a class="button btn-success" routerLink="/verification">Register</a>
+      <a class="button btn-success" (click)="register()">Register</a>
       <p class="form-buttom-text">Already have an account? <a routerLink="/login"><span>Log in here</span></a></p>
       <p class="form-buttom-text">By clicking this button, you are agreeing to our <span>Terms and Conditions.</span></p>
+      <input class="input" type="hidden" placeholder="Confirm Password" name="username" [(ngModel)]="signup.honeyPot" >
+
     </form>
   </section>
 </section>
+
+<div class="loader" [hidden]="!isLoading">
+  <h6 class="text-danger">
+      Processing ...<br >
+      Please wait 
+  </h6>
+</div>

@@ -7,11 +7,20 @@
    
 
     <form action="#" class="form-container">
+      <div class="text-danger text-center info-danger" [hidden]="!errorMsg">
+        {{errorMsg}}
+      </div>
       <div class="field">
-        <input class="input" type="text" placeholder="- - - - -" required>
+        <input class="input" name="otp" maxlength="6" [(ngModel)]="otp.code" type="text" placeholder="- - - - -" required>
       </div>        
       
-      <a class="button btn-success" routerLink="/profile">Verify</a>
+      <a class="button btn-success" (click)="verify()">Verify</a>
     </form>
   </section>
 </section>
+<div class="loader" [hidden]="!isLoading">
+  <h6 class="text-danger">
+      Processing ...<br >
+      Please wait 
+  </h6>
+</div>

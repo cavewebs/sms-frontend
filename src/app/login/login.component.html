@@ -10,17 +10,21 @@
 
     <form action="#" class="form-container">
       
+      <div class="text-danger text-center info-danger" [hidden]="!errorMsg">
+        {{errorMsg}}
+      </div>
+      
       <div class="field">
         <label class="label">Email</label>
-        <input class="input" type="email" placeholder="Email" required>
+        <input class="input" [(ngModel)]="login.email" name="email" type="email" placeholder="Email" required>
       </div>
 
       <div class="field">
         <label class="label">Password</label>
-        <input class="input" type="password" placeholder="Password" required>
+        <input class="input" [(ngModel)]="login.password" name="password" type="password" placeholder="Password" required>
       </div>        
       
-      <a class="button btn-success" routerLink="/profile">Log In</a>
+      <a class="button btn-success" (click)="loginUser()">Log In</a>
 
       <div class="form-buttom">
         <p class="form-buttom-text">Not Registered? <span><a routerLink="/signup">Create an account</a></span></p>
@@ -30,3 +34,10 @@
     </form>
   </section>
 </section>
+
+<div class="loader" [hidden]="!isLoading">
+  <h6 class="text-danger">
+      Processing ...<br >
+      Please wait 
+  </h6>
+</div>
