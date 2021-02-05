@@ -21,7 +21,6 @@ import { TransactionComponent } from './transaction/transaction.component';
 import { SettingComponent } from './setting/setting.component';
 import { FooterComponent } from './footer/footer.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { JwtHelperService, JwtModule, JWT_OPTIONS } from '@auth0/angular-jwt';
 import { AuthGuardService } from './auth/auth-guard.service';
 import { RoleGuardService } from './auth/role-guard.service';
 import { AuthService } from './auth/auth.service';
@@ -51,10 +50,9 @@ import { AuthService } from './auth/auth.service';
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    JwtModule
     // AngularFontAwesomeModule,
   ],
-  providers: [JwtHelperService, AuthGuardService, RoleGuardService, AuthService],
+  providers: [AuthGuardService, RoleGuardService, AuthService],
   schemas: [],
   bootstrap: [AppComponent]
 })
